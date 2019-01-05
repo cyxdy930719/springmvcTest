@@ -12,4 +12,24 @@ public class UserServiceImpl implements IUserService {
     public List<User> getUsers() {
         return dao.getUsers();
     }
+
+    @Override
+    public int insertOne(User user) {
+        return dao.insertOne(user);
+    }
+
+    @Override
+    public int updateOne(User user) {
+        return dao.updateOne(user);
+    }
+
+    @Override
+    public User getOne(String name) {
+        return dao.getOne(name);
+    }
+
+    @Override
+    public int delOne(String name) {
+        return dao.delOne(name);
+    }
 }
